@@ -83,6 +83,29 @@ $('#send12').click(function(){
 	txt.val('');
 })
 
+$('#send13').click(function(){
+	var txt = $(this).siblings("input");
+	var boss = firebase.database().ref('boss13');
+	boss.push({content:txt.val()});
+	txt.val('');
+})
+
+$('#send14').click(function(){
+	var txt = $(this).siblings("input");
+	var boss = firebase.database().ref('boss14');
+	boss.push({content:txt.val()});
+	txt.val('');
+})
+
+$('#send15').click(function(){
+	var txt = $(this).siblings("input");
+	var boss = firebase.database().ref('boss15');
+	boss.push({content:txt.val()});
+	txt.val('');
+})
+
+
+
 $(document).ready(function(){
 	var boss1 = firebase.database().ref('boss1');
 	var boss2 = firebase.database().ref('boss2');
@@ -96,6 +119,9 @@ $(document).ready(function(){
 	var boss10 = firebase.database().ref('boss10');
 	var boss11 = firebase.database().ref('boss11');
 	var boss12 = firebase.database().ref('boss12');
+	var boss13 = firebase.database().ref('boss13');
+	var boss14 = firebase.database().ref('boss14');
+	var boss15 = firebase.database().ref('boss15');
 
 	boss1.on('value',function(snapshot){
 		var myobj = snapshot.val();
@@ -191,5 +217,29 @@ $(document).ready(function(){
 		var re_time = val.content.split(':');
 		$('.flex-3')[11].children[3].innerHTML = val.content;
 		$('.flex-3')[11].children[6].innerHTML = (parseInt(re_time[0])+4)%24 + ':'+ parseInt(re_time[1]);
+	})
+
+	boss13.on('value',function(snapshot){
+		var myobj = snapshot.val();
+		var val = myobj[Object.keys(myobj)[Object.keys(myobj).length - 1]];
+		var re_time = val.content.split(':');
+		$('.flex-3')[12].children[3].innerHTML = val.content;
+		$('.flex-3')[12].children[6].innerHTML = (parseInt(re_time[0])+2)%24 + ':'+ parseInt(re_time[1]);
+	})
+
+	boss14.on('value',function(snapshot){
+		var myobj = snapshot.val();
+		var val = myobj[Object.keys(myobj)[Object.keys(myobj).length - 1]];
+		var re_time = val.content.split(':');
+		$('.flex-3')[13].children[3].innerHTML = val.content;
+		$('.flex-3')[13].children[6].innerHTML = (parseInt(re_time[0])+3)%24 + ':'+ parseInt(re_time[1]);
+	})
+
+	boss15.on('value',function(snapshot){
+		var myobj = snapshot.val();
+		var val = myobj[Object.keys(myobj)[Object.keys(myobj).length - 1]];
+		var re_time = val.content.split(':');
+		$('.flex-3')[14].children[3].innerHTML = val.content;
+		$('.flex-3')[14].children[6].innerHTML = (parseInt(re_time[0])+2)%24 + ':'+ parseInt(re_time[1]);
 	})
 })
