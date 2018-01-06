@@ -150,7 +150,7 @@ $(document).ready(function(){
 		var val = myobj[Object.keys(myobj)[Object.keys(myobj).length - 1]];
 		var re_time = val.content.split(':');
 		$('.flex-3')[6].children[3].innerHTML = val.content;
-		$('.flex-3')[6].children[6].innerHTML = (parseInt(re_time[0])+4)%24 + ':'+ parseInt(re_time[1]);
+		$('.flex-3')[6].children[6].innerHTML = (parseInt(re_time[0])+3)%24 + ':'+ parseInt(re_time[1]);
 	})
 
 	boss8.on('value',function(snapshot){
@@ -174,7 +174,7 @@ $(document).ready(function(){
 		var val = myobj[Object.keys(myobj)[Object.keys(myobj).length - 1]];
 		var re_time = val.content.split(':');
 		$('.flex-3')[9].children[3].innerHTML = val.content;
-		$('.flex-3')[9].children[6].innerHTML = (parseInt(re_time[0])+4)%24 + ':'+ parseInt(re_time[1]);
+		$('.flex-3')[9].children[6].innerHTML = (parseInt(re_time[0])+2)%24 + ':'+ parseInt(re_time[1]);
 	})
 
 	boss11.on('value',function(snapshot){
