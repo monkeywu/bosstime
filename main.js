@@ -102,7 +102,7 @@ $(document).ready(function(){
 		var val = myobj[Object.keys(myobj)[Object.keys(myobj).length - 1]];
 		var re_time = val.content.split(':');
 		$('.flex-3')[0].children[3].innerHTML = val.content;
-		$('.flex-3')[0].children[6].innerHTML = (parseInt(re_time[0])+8)%24 + ':'+ parseInt(re_time[1]);
+		$('.flex-3')[0].children[6].innerHTML = (parseInt(re_time[0])+4)%24 + ':'+ parseInt(re_time[1]);
 	})
 
 	boss2.on('value',function(snapshot){
@@ -110,7 +110,7 @@ $(document).ready(function(){
 		var val = myobj[Object.keys(myobj)[Object.keys(myobj).length - 1]];
 		var re_time = val.content.split(':');
 		$('.flex-3')[1].children[3].innerHTML = val.content;
-		$('.flex-3')[1].children[6].innerHTML = (parseInt(re_time[0])+8)%24 + ':'+ parseInt(re_time[1]);
+		$('.flex-3')[1].children[6].innerHTML = (parseInt(re_time[0])+4)%24 + ':'+ parseInt(re_time[1]);
 	})
 
 	boss3.on('value',function(snapshot){
@@ -118,7 +118,7 @@ $(document).ready(function(){
 		var val = myobj[Object.keys(myobj)[Object.keys(myobj).length - 1]];
 		var re_time = val.content.split(':');
 		$('.flex-3')[2].children[3].innerHTML = val.content;
-		$('.flex-3')[2].children[6].innerHTML = (parseInt(re_time[0])+8)%24 + ':'+ parseInt(re_time[1]);
+		$('.flex-3')[2].children[6].innerHTML = (parseInt(re_time[0])+4)%24 + ':'+ parseInt(re_time[1]);
 	})
 
 	boss4.on('value',function(snapshot){
@@ -126,7 +126,7 @@ $(document).ready(function(){
 		var val = myobj[Object.keys(myobj)[Object.keys(myobj).length - 1]];
 		var re_time = val.content.split(':');
 		$('.flex-3')[3].children[3].innerHTML = val.content;
-		$('.flex-3')[3].children[6].innerHTML = (parseInt(re_time[0])+8)%24 + ':'+ parseInt(re_time[1]);
+		$('.flex-3')[3].children[6].innerHTML = (parseInt(re_time[0])+4)%24 + ':'+ parseInt(re_time[1]);
 	})
 
 	boss5.on('value',function(snapshot){
@@ -142,7 +142,7 @@ $(document).ready(function(){
 		var val = myobj[Object.keys(myobj)[Object.keys(myobj).length - 1]];
 		var re_time = val.content.split(':');
 		$('.flex-3')[5].children[3].innerHTML = val.content;
-		$('.flex-3')[5].children[6].innerHTML = (parseInt(re_time[0])+8)%24 + ':'+ parseInt(re_time[1]);
+		$('.flex-3')[5].children[6].innerHTML = (parseInt(re_time[0])+2)%24 + ':'+ parseInt(re_time[1]);
 	})
 
 	boss7.on('value',function(snapshot){
@@ -150,7 +150,7 @@ $(document).ready(function(){
 		var val = myobj[Object.keys(myobj)[Object.keys(myobj).length - 1]];
 		var re_time = val.content.split(':');
 		$('.flex-3')[6].children[3].innerHTML = val.content;
-		$('.flex-3')[6].children[6].innerHTML = (parseInt(re_time[0])+8)%24 + ':'+ parseInt(re_time[1]);
+		$('.flex-3')[6].children[6].innerHTML = (parseInt(re_time[0])+4)%24 + ':'+ parseInt(re_time[1]);
 	})
 
 	boss8.on('value',function(snapshot){
@@ -158,7 +158,7 @@ $(document).ready(function(){
 		var val = myobj[Object.keys(myobj)[Object.keys(myobj).length - 1]];
 		var re_time = val.content.split(':');
 		$('.flex-3')[7].children[3].innerHTML = val.content;
-		$('.flex-3')[7].children[6].innerHTML = (parseInt(re_time[0])+8)%24 + ':'+ parseInt(re_time[1]);
+		$('.flex-3')[7].children[6].innerHTML = (parseInt(re_time[0])+2)%24 + ':'+ parseInt(re_time[1]);
 	})
 
 	boss9.on('value',function(snapshot){
@@ -166,7 +166,7 @@ $(document).ready(function(){
 		var val = myobj[Object.keys(myobj)[Object.keys(myobj).length - 1]];
 		var re_time = val.content.split(':');
 		$('.flex-3')[8].children[3].innerHTML = val.content;
-		$('.flex-3')[8].children[6].innerHTML = (parseInt(re_time[0])+8)%24 + ':'+ parseInt(re_time[1]);
+		$('.flex-3')[8].children[6].innerHTML = (parseInt(re_time[0])+1)%24 + ':'+ parseInt(re_time[1]);
 	})
 
 	boss10.on('value',function(snapshot){
@@ -174,7 +174,7 @@ $(document).ready(function(){
 		var val = myobj[Object.keys(myobj)[Object.keys(myobj).length - 1]];
 		var re_time = val.content.split(':');
 		$('.flex-3')[9].children[3].innerHTML = val.content;
-		$('.flex-3')[9].children[6].innerHTML = (parseInt(re_time[0])+8)%24 + ':'+ parseInt(re_time[1]);
+		$('.flex-3')[9].children[6].innerHTML = (parseInt(re_time[0])+4)%24 + ':'+ parseInt(re_time[1]);
 	})
 
 	boss11.on('value',function(snapshot){
@@ -190,6 +190,6 @@ $(document).ready(function(){
 		var val = myobj[Object.keys(myobj)[Object.keys(myobj).length - 1]];
 		var re_time = val.content.split(':');
 		$('.flex-3')[11].children[3].innerHTML = val.content;
-		$('.flex-3')[11].children[6].innerHTML = (parseInt(re_time[0])+8)%24 + ':'+ parseInt(re_time[1]);
+		$('.flex-3')[11].children[6].innerHTML = (parseInt(re_time[0])+4)%24 + ':'+ parseInt(re_time[1]);
 	})
 })
